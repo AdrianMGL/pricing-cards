@@ -1,0 +1,225 @@
+/* ===================  MAIN STYLES  =================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  background: #e2e1e1;
+}
+
+/*  */
+:root {
+  --text-gray: #808291;
+
+  --color-card-blue: #74b9ff;
+  --color-card-yellow: #ffd32a;
+  --color-card-red: #f53b57;
+}
+
+/* ****************** GLOBAL CLASSES  ******************** */
+.text-gray {
+  color: var(--text-gray);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pb-5 {
+  padding-bottom: 1.5rem;
+}
+
+/*  */
+.box-container {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+
+  /*  */
+  /* background: #333; */
+  /*  */
+}
+
+.box-container .box {
+  height: 560px;
+  width: 300px;
+  margin: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  /*  */
+  /* background: #222; */
+  /*  */
+
+  background: #fff;
+}
+
+.box-container .box::before,
+.box-container .box::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.box-container .box::before {
+  background: #f0f0f0;
+  top: -10px;
+  left: 80%;
+}
+
+.box-container .box::after {
+  background: var(--color-card-blue);
+  bottom: -10%;
+  right: 80%;
+}
+
+.box-container .box .title {
+  margin: 30px 0;
+  font-size: 35px;
+  color: var(--color-card-blue);
+}
+
+.box-container .box .price {
+  height: 160px;
+  width: 160px;
+  color: #fff;
+  background: var(--color-card-blue);
+  padding: 57px 0 0;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+}
+
+.box-container .box .price .currency {
+  font-size: 35px;
+  list-style: 35px;
+  font-weight: 300;
+}
+
+.box-container .box .price .amount {
+  font-size: 58px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.box-container .box .price .duration {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
+.box-container .box ul li {
+  text-align: left;
+  padding-left: 45px;
+  margin: 15px auto;
+  color: rgba(102, 102, 102, 0.85);
+  list-style: none;
+  font-weight: bold;
+  /*  */
+  /* color: #fff; */
+  /*  */
+}
+
+.box-container .box ul li i {
+  padding: 0 10px;
+  color: var(--color-card-blue);
+}
+
+.box-container .box button {
+  height: 45px;
+  width: 160px;
+  margin: 20px;
+  outline: none;
+  border-radius: 50px;
+  background: none;
+  color: var(--color-card-blue);
+  border: 1.6px solid var(--color-card-blue);
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.box-container .box button:hover {
+  cursor: pointer;
+  background: var(--color-card-blue);
+  color: #fff;
+  border: 0.5px solid #fff;
+}
+
+/* COLOR CARD YELLOW */
+
+.box-container .yellow .title {
+  color: var(--color-card-yellow);
+}
+
+.box-container .yellow .price {
+  background-color: var(--color-card-yellow);
+}
+
+.box-container .yellow ul li i {
+  color: var(--color-card-yellow);
+}
+
+.box-container .yellow button {
+  border: 1.6px solid var(--color-card-yellow);
+  color: var(--color-card-yellow);
+}
+
+.box-container .yellow button:hover {
+  border: 0.5px solid var(--color-card-yellow);
+  background: var(--color-card-yellow);
+}
+
+.box-container .yellow::after {
+  background-color: var(--color-card-yellow);
+}
+
+/* COLOR CARD RED */
+
+.box-container .red .title {
+  color: var(--color-card-red);
+}
+
+.box-container .red .price {
+  background-color: var(--color-card-red);
+}
+
+.box-container .red ul li i {
+  color: var(--color-card-red);
+}
+
+.box-container .red button {
+  border: 1.6px solid var(--color-card-red);
+  color: var(--color-card-red);
+}
+
+.box-container .red button:hover {
+  border: 0.5px solid var(--color-card-red);
+  background: var(--color-card-red);
+}
+
+.box-container .red::after {
+  background-color: var(--color-card-red);
+}
+
+/* ===================  FOOTER  =================== */
